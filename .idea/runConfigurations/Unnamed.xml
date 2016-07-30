@@ -1,0 +1,8 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Unnamed" type="MixRunConfigurationType" factoryName="Elixir Mix" singleton="true" show_console_on_std_err="false" show_console_on_std_out="false">
+    <option name="command" value="iex -S mix" />
+    <option name="skipDependencies" value="false" />
+    <module />
+    <method />
+  </configuration>
+</component>
