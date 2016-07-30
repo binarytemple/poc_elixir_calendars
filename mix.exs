@@ -27,6 +27,9 @@ defmodule PocElixirCalendars.Mixfile do
   #
   # Type "mix help deps" for more examples and options
   defp deps do
-  [  {:calendar, "~> 0.14.2"},  ]
+  [  
+    {:calendar, "~> 0.14.2"},  
+    {:ex_doc, ">= 0.0.0", only: :dev} 
+  ]
   end
 end
