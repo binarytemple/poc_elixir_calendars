@@ -2,19 +2,35 @@ defmodule PocElixirCalendars.Mixfile do
   use Mix.Project
 
   def project do
-    [app: :poc_elixir_calendars,
-     version: "0.0.1",
-     elixir: "~> 1.2",
-     build_embedded: Mix.env == :prod,
-     start_permanent: Mix.env == :prod,
-     deps: deps]
+    [
+      app: :poc_elixir_calendars,
+      version: "0.0.1",
+      elixir: "~> 1.2",
+      build_embedded: Mix.env == :prod,
+      start_permanent: Mix.env == :prod,
+      deps: deps,
+      escript: escript
+     ]
   end
 
+  def escript do
+		[
+			main_module: PocElixirCalendars,
+			appplications: [
+				:tzdata
+			]
+		]
+  end
+	
   # Configuration for the OTP application
   #
   # Type "mix help compile.app" for more information
   def application do
-    [applications: [:logger, :calendar]]
+    [
+			applications: [
+				:logger, :tzdata, :calendar
+			]
+		]
   end
 
   # Dependencies can be Hex packages:
