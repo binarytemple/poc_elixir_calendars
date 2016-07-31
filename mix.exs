@@ -47,6 +47,7 @@ defmodule PocElixirCalendars.Mixfile do
   [  
     {:calendar, "~> 0.14.2"},  
     {:tzdata, "~> 0.1.7"},
+    {:exrm, "~> 1.0.8"},
     {:ex_doc, ">= 0.0.0", only: :dev} 
   ]
   end
