@@ -10,6 +10,7 @@ defmodule PocElixirCalendars.Mixfile do
       start_permanent: Mix.env == :prod,
       deps: deps,
       escript: escript
+			
      ]
   end
 
@@ -17,7 +18,7 @@ defmodule PocElixirCalendars.Mixfile do
 		[
 			main_module: PocElixirCalendars,
 			appplications: [
-				:tzdata
+				:logger, :tzdata, :calendar
 			]
 		]
   end
